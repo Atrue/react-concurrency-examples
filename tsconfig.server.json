@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./dist/server",
+    "composite": true,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "target": "ESNext",
+    "jsx": "react-jsx",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "preserveSymlinks": true,
+    "strict": true
+  },
+  "include": [
+    "server.ts",
+    "server",
+    "server/*.json",
+    "src/types"
+  ],
+  "exclude": [
+    "dist",
+    "src/**/*.tsx"
+  ],
+  "ts-node": {
+    "transpileOnly": true,
+    "esm": true
+  }
+}

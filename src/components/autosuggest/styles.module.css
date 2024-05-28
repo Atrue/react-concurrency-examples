@@ -1,0 +1,9 @@
+.loading {
+    background: #3c3c3c;
+    color: #bfbfbf;
+    pointer-events: none;
+}
+
+.error {
+    background: #880000;
+}

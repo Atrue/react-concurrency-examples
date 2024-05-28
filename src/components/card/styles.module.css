@@ -1,0 +1,13 @@
+.loading {
+    background: #3c3c3c;
+    color: #bfbfbf;
+    pointer-events: none;
+}
+
+.page {
+    display: flex;
+}
+
+.details {
+    flex: 1;
+}
