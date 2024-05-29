@@ -1,6 +1,11 @@
 import { useState } from "react";
 import { Country, CountryApiResponse } from "@/types/country";
-import { Input, Results, GetMore } from "@/components/autosuggest";
+import {
+  Input,
+  Results,
+  GetMore,
+  AutoSuggestWrapper,
+} from "@/components/autosuggest";
 import { Operation, sleep } from "effection";
 import useTaskCallback from "@/hooks/useTaskCallback";
 import fetchTask from "@/utils/fetchTask";
@@ -68,7 +73,7 @@ const Autosuggest = () => {
   };
 
   return (
-    <div>
+    <AutoSuggestWrapper>
       <Input value={input} onChange={onChange} onConfirm={onConfirm} />
       <Results
         data={data}
@@ -82,7 +87,7 @@ const Autosuggest = () => {
         hasNext={hasNext}
         onClick={onLoadMore}
       />
-    </div>
+    </AutoSuggestWrapper>
   );
 };
 

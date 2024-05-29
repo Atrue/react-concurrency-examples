@@ -1,13 +1,12 @@
-.loading {
-    background: #3c3c3c;
-    color: #bfbfbf;
-    pointer-events: none;
-}
-
 .page {
-    display: flex;
+    height: 100vh;
 }
 
 .details {
     flex: 1;
+    margin: 20px;
+}
+
+.comments {
+    text-align: left;
 }

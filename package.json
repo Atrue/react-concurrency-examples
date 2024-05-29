@@ -13,7 +13,9 @@
     "preview": "cross-env NODE_ENV=production ts-node -P tsconfig.server.json server.ts"
   },
   "dependencies": {
+    "@ant-design/icons": "5.1.4",
     "@reduxjs/toolkit": "^2.2.5",
+    "antd": "^5.17.4",
     "classnames": "^2.5.1",
     "compression": "^1.7.4",
     "effection": "^3.0.3",
@@ -34,7 +36,7 @@
     "@types/express-serve-static-core": "^4.19.0",
     "@types/lodash": "^4.17.1",
     "@types/node": "^20.12.12",
-    "@types/react": "^18.2.66",
+    "@types/react": "18.2.65",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",

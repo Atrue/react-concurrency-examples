@@ -9,4 +9,8 @@ export default defineConfig({
       "@": "/src",
     },
   },
+  optimizeDeps: {
+    //workaround for the problem https://github.com/vitejs/vite/issues/7719
+    extensions: [".css"],
+  },
 });

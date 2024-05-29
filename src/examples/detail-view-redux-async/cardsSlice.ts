@@ -67,6 +67,7 @@ const cardsSlice = createAppSlice({
           state.loading = true;
         },
         rejected: (state, action) => {
+          if (action.meta.aborted) return;
           state.loading = false;
           state.error = action.error.message;
         },

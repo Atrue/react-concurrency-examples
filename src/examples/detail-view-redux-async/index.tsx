@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { CardPage, CardList, CardDetails } from "@/components/card";
+import { CardPage, CardList, CardDetails, CardEmpty } from "@/components/card";
 import { CardShort } from "@/types/card";
 import { Provider } from "react-redux";
 import createStore, { useAppDispatch, useAppSelector } from "./store";
@@ -45,7 +45,7 @@ function Page() {
   return (
     <CardPage>
       <CardList cards={cards} loading={loading} onClick={handleCardClick} />
-      {cardId && <Details id={cardId} />}
+      {cardId ? <Details id={cardId} /> : <CardEmpty />}
     </CardPage>
   );
 }

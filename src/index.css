@@ -7,9 +7,15 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
+  text-align: center;
+  flex: 1;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  margin: 0;
+}

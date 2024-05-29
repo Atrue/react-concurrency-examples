@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react";
-import { CardPage, CardList, CardDetails } from "@/components/card";
+import { CardPage, CardList, CardDetails, CardEmpty } from "@/components/card";
 import fetchAsync from "@/utils/fetchAsync";
 import { Card, CardShort, Comment } from "@/types/card";
 import useAsyncResource from "@/hooks/useAsyncResource";
@@ -53,7 +53,7 @@ export default function Page() {
   return (
     <CardPage>
       <CardList cards={data} loading={loading} onClick={handleCardClick} />
-      {cardId && <Details id={cardId} />}
+      {cardId ? <Details id={cardId} /> : <CardEmpty />}
     </CardPage>
   );
 }

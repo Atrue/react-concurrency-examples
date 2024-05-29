@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { Layout } from "antd";
 import S from "./styles.module.css";
 
 interface CardPageProps {
@@ -6,5 +7,5 @@ interface CardPageProps {
 }
 
 export default function CardPage({ children }: CardPageProps) {
-  return <div className={S.page}>{children}</div>;
+  return <Layout className={S.page}>{children}</Layout>;
 }

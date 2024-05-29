@@ -1,9 +1,14 @@
-.loading {
-    background: #3c3c3c;
-    color: #bfbfbf;
-    pointer-events: none;
+.wrapper {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px;
 }
 
-.error {
-    background: #880000;
+.content {
+    width: 500px;
+}
+
+.more {
+    margin: 10px;
 }
